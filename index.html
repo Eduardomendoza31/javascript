@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <h1>Introducción a java Script</h1>
+    <imput type="text" id="saludo">
+    <!--Siempre es mejor poner el script despues de todo el body-->
+    
+
+    <script>
+        alert("Hola mundo desde Js")
+        document.write("<br>")
+        document.write("hola mundo desde js");
+        console.log("Hola mundo desde js");
+        edad=16;
+        console.log(edad);
+        nombre="Eduardo"
+        document.write("<br>"+ nombre);
+        document.write("El nombre del estudiante es : "+ nombre +" y la edad es : " + edad);
+        //Variable es un espacio de memoria donde guardamos informacion y esta disponible cuando uno necesita
+        var apellido=prompt ("INGRESE EL APELLIDO DEL ESTUDIANTE");
+        document.write(apellido)
+        //tipos de variables 
+        //variables numericas 
+        var edad1=25
+         var precio=12.35
+
+         //string
+         var direccion="Galo plasa"
+         //array es un espacio de memoria donde se guardan distintos datos o informacion del mismo tipo
+
+       var amigos=["Luis", "Carlos", "Pepe"];
+       document.write("<br>"+ amigos)
+       //objet
+       var objeto={
+        color: "black",
+        size:12
+       }
+       //boleano
+       var boleano="True"
+       //undefinid
+       var ejemplo
+       //null
+       var numero2=10
+       var numero2=null
+       //nan
+       var texto2="hola"
+       document.write(texto2*2)
+
+       //arreglos
+       var notas=[5,2,3,1];
+       document.write("<br>")
+       document.write(amigos[3])
+       document.write("<br>")
+       //tamaño arreglo
+       document.write("tienes" + notas.length + "en este parcial")
+
+       //añadimos un dato al final del arreglo
+       notas[notas.length]=3
+       document.write("<br>")
+       document.write(notas)
+       document.write("<br>")
+       document.write("tienes" + notas.length + "en este parcial")
+       //añadimos n numeros al arreglo
+       notas.push(4,1,3,5)
+       document.write("<br>")
+       document.write(notas)
+       document.write("tienes" + notas.length + "en este parcial")
+       //eliminamos en ultimo dato del arreglo
+       notas.pop()
+       document.write("<br>")
+       document.write(notas)
+       //concatenar arreglos
+       var notas2=amigos.concat(notas)
+       document.write("<br>")
+       document.write(notas2)
+       //condicionales 
+       // es una pregunta a una sesion de codigo que tiene dos respuestas
+       //verdadero o falso
+       //sintaxis basica
+       //if (condicion){
+        //bloque de codigo
+       //}else{bloque de codigo}
+//dentro del if hay varios operadores
+//asignacion(==,===;>,>,>=,!=)
+//Logico (and, &&, y or ||)
+       var nombre2="Eduardo"
+       if(nombre2=="Carlos"){
+        document.write("Carlos Bienvenido a mi app")
+       }else{
+        document.write("<br>")
+        document.write("Anonimo Bienvenido a mi app")
+       }
+
+
+
+
+
+    </script>
+</body>
+</html>
